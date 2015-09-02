@@ -7,11 +7,13 @@
 </head>
 
     <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        {{>home}}
+    </body>
+
+<template name="home">
     {{>MainHeader}}
     {{>content}}
-    </div>
-</body>
+</template>
 
 
 <template name="post">
@@ -43,12 +45,7 @@
     <main class="mdl-layout__content">
         <div class="page-content">
             <div class="mdl-grid">
-                {{>post}}
-                {{>post}}
-                {{>post}}
-                {{>post}}
-                {{>post}}
-                {{>post}}   
+                {{>post}}  
             </div>
         </div>
     </main>
