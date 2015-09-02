@@ -5,6 +5,8 @@ Router.route('/', function () {
   // render the Post template into the "main" region
   // {{> yield}}
   this.render('MainHeader', {to: 'header'});
+    
+  this.render('content', {to: 'main'});
 
   
 
